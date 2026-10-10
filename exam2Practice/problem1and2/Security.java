@@ -47,7 +47,7 @@ public class Security{
 	public void showUsers() {
 		int index;
 		System.out.printf("%-15s %-15s %5s\n", "Username", "Password", "EMail");
-		System.out.println("---------     -----------   ----");
+		System.out.printf("%-15s %-15s %4s\n", "---------", "-----------", "----");
 		for (index = 0; index <stuff.length; index++) {
 			if (stuff[index] != null) {
 				System.out.printf("%-15s %-15s %15s\n", stuff[index].getUserName(), stuff[index].getPassword(), stuff[index].getEmail());
